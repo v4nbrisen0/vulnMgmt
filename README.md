@@ -41,7 +41,7 @@ Review the non-credential scan results:  <br/>
 <br />
 <br />
 6:  <br/>
-<img src="https://imgur.com/I0nFyod.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/p4Wkonb.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 
 <br />
 <br />
