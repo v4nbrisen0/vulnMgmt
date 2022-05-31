@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Demonstrate the difference between a credential and non-credential scan. Install deprecated software to view how a credentialed scan changes before and after deprecated software. Remediate vulnerabilities and another scan to view how many vulnerabilities are left. <br /> I wanted to operate within the vulnerability scanning and remediation parts of the vulnerability management lifecycle. 
+Demonstrate the difference between a credential and non-credential scan. Install deprecated software to view how a credentialed scan changes before and after deprecated software. Remediate vulnerabilities and another scan to view how many vulnerabilities are left. <br /> <br /> I wanted to operate within the vulnerability scanning and remediation parts of the vulnerability management lifecycle. In this lab, I setup a Windows 10 VM with VMware Workstation to scan with Nessus Essentials. I ran a basic non-credential network scan on the Windows 10 VM to view the types of vulnerabilities that Nessus would find.
 <br />
 
 
