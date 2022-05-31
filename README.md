@@ -28,31 +28,36 @@ Open the VM and get the IP address. Turn off the Firewall so that you can try to
  <img src="https://imgur.com/Q18kB2K.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-Review the non-credential scan results:  <br/>
+Launch the scan and review the non-credential scan results when complete:  <br/>
 <img src="https://imgur.com/vLjNTSj.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
-<img src="https://imgur.com/GjK0nVY.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/GjK0nVY.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>  
 <br />
 <br />
- 5:  <br/>
-<img src="https://imgur.com/4K4flWQ.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+Edit the basic scan to run with Nessus/Tenable recommendations:
+<br/>
+- <b>Remote Registry enabled</b> <br />
+  <img src="https://imgur.com/4K4flWQ.png" height="40%" width="40%" alt="Vulnerability Management Lab"/>
 <br />
-<img src="https://imgur.com/a44BgOC.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+- <b>File and Printer Sharing on</b> <br />
+  <img src="https://imgur.com/a44BgOC.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
+- <b>Notifications disabled in User Account Control Settings</b> <br />
+- <b>Add a policy in the Registry (for scanning a host that is not an admin). Documentation <a href="https://community.tenable.com/s/article/Scanning-with-non-default-Windows-Administrator-Account">here</a>.</b> <br />
 <br />
-6:  <br/>
-<img src="https://imgur.com/p4Wkonb.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+  Now that the above changes are made in the VM, we can go into Nessus Essentials and setup the scan with Windows credentials. Doing this will allow the scanner to dig for more information and find more vulnerabilities:  <br/>
+<img src="https://imgur.com/p4Wkonb.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 
 <br />
 <br />
-7:  <br/>
+Look at the results of the credentialed scan. THere are more vulnerabilities listed now compared to when we ran a basic scan in the beginning of the lab:  <br/>
 <img src="https://imgur.com/TGSumO0.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <img src="https://imgur.com/BSpnFPc.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-8:  <br/>
-<img src="https://imgur.com/L6kGbKO.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+I wanted to install a deprecated version of Firefox on my VM to see how that would affect the vulnerability scan. Once Firefox is installed, I am going to run the same scan to see how the results change:  <br/>
+<img src="https://imgur.com/L6kGbKO.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
 9:  <br/>
@@ -60,13 +65,17 @@ Review the non-credential scan results:  <br/>
 
 <br />
 <br />
-10:  <br/>
-<img src="https://imgur.com/F4zV0ky.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+Start remediating vulnerabilities. A lot of critical vulnerabilities stem from Firefox and Windows 10 being out of date. Run Windows 10 updates and uninstall Firefox. I could have also updated Firefox, but since I installed a deprecated version of Firefox for the sake of this lab, I am just going to uninstall the software.<br/>
+<img src="https://imgur.com/F4zV0ky.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 
 <br />
 <br />
-11:  <br/>
-<img src="https://imgur.com/mPI4XjU.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+After updating Windows 10 and uninstalling Firefox, we can see that there are no more critical vulnerabilities:  <br/>
+<img src="https://imgur.com/sV8Rysd.png" height="80%" width="80%" alt="Vulnerability Management Lab"/> <br/><br/>
+In the VPR Threat tab, we can see that the Firefox threat is no longer there. While here, we can click on the threat present and view more details. There is a "See Also" link that takes us to another site that gives more information on the threat as well:  <br/>
+<img src="https://imgur.com/NuMAuKj.png" height="80%" width="80%" alt="Vulnerability Management Lab"/> <br/><br/>
+The History tab here shows that as we remediated the vulnerabilities, there are less vulnerabilities present on the VM. Furthermore, there are no critical vulnerabilities:  <br/>
+<img src="https://imgur.com/1iEDLRz.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 
 <br />
 <br />
