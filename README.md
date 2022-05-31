@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Demonstrate the difference between a credential and non-credential scan. Install deprecated software and run a scan and then remediate vulnerabilities.
+Demonstrate the difference between a credential and non-credential scan. Install deprecated software to view how a credentialed scan changes before and after deprecated software. Remediate vulnerabilities and another scan to view how many vulnerabilities are left. <br /> I wanted to operate within the vulnerability scanning and remediation parts of the vulnerability management lifecycle. 
 <br />
 
 
@@ -10,8 +10,6 @@ Demonstrate the difference between a credential and non-credential scan. Install
 
 - <b>Nessus Essentials</b> 
 - <b>VMware Workstation</b>
-
-
 
 <h2>Lab walk-through:</h2>
 
