@@ -23,15 +23,15 @@ Open the VM and get the IP address. Turn off the Firewall so that you can try to
 <br />
 <br />
  Setup a basic network scan in Nessus to see if I can get info information from the VM. Save and launch the scan: <br/>
-<img src="https://imgur.com/1V1F3Jf.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/1V1F3Jf.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
  <img src="https://imgur.com/Q18kB2K.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
 Review the non-credential scan results when complete:  <br/>
-<img src="https://imgur.com/vLjNTSj.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/vLjNTSj.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
-<img src="https://imgur.com/GjK0nVY.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>  
+<img src="https://imgur.com/GjK0nVY.png" height="70%" width="70%" alt="Vulnerability Management Lab"/>  
 <br />
 <br />
 Edit the basic scan to run with Nessus/Tenable recommendations:
@@ -51,17 +51,19 @@ Edit the basic scan to run with Nessus/Tenable recommendations:
 <br />
 <br />
 Look at the results of the credentialed scan. THere are more vulnerabilities listed now compared to when we ran a basic scan in the beginning of the lab:  <br/>
-<img src="https://imgur.com/TGSumO0.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/2Q2cDPw.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<br />
+<img src="https://imgur.com/RaxtoPF.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <img src="https://imgur.com/BSpnFPc.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
 I wanted to install a deprecated version of Firefox on my VM to see how that would affect the vulnerability scan. Once Firefox is installed, I am going to run the same scan to see how the results change:  <br/>
-<img src="https://imgur.com/L6kGbKO.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/L6kGbKO.png" height="45%" width="45%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
 There are a lot more vulnerabilities on the VM after installing an old version of Firefox. If you look in the History tab, you can see that the amount of critical vulnerabilities has increased in the pie chart towards the right-side of the screen:  <br/>
-<img src="https://imgur.com/iZahTSx.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
+<img src="https://imgur.com/ZNJBgO8.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
 <img src="https://imgur.com/jfQ7dgv.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
 <img src="https://imgur.com/DVXEaR3.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
 
@@ -74,7 +76,7 @@ Start remediating vulnerabilities. A lot of critical vulnerabilities stem from F
 <br />
 <br />
 After updating Windows 10 and uninstalling Firefox, we can see that there are no more critical vulnerabilities:  <br/>
-<img src="https://imgur.com/sV8Rysd.png" height="80%" width="80%" alt="Vulnerability Management Lab"/> <br/><br/>
+<img src="https://imgur.com/s60QJkt.png" height="80%" width="80%" alt="Vulnerability Management Lab"/> <br/><br/>
 In the VPR Threat tab, we can see that the Firefox threat is no longer there. While here, we can click on the threat present and view more details. There is a "See Also" link that takes us to another site that gives more information on the threat as well:  <br/>
 <img src="https://imgur.com/NuMAuKj.png" height="80%" width="80%" alt="Vulnerability Management Lab"/> <br/><br/>
 The History tab here shows that as we remediated the vulnerabilities, there are less vulnerabilities present on the VM. Furthermore, there are no critical vulnerabilities:  <br/>
