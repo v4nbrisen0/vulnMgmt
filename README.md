@@ -61,7 +61,8 @@ I wanted to install a deprecated version of Firefox on my VM to see how that wou
 <br />
 <br />
 There are a lot more vulnerabilities on the VM after installing an old version of Firefox. If you look in the History tab, you can see that the amount of critical vulnerabilities has increased in the pie chart towards the right-side of the screen:  <br/>
-<img src="https://imgur.com/iZahTSx.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
+<img src="https://imgur.com/iZahTSx.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
+<img src="https://imgur.com/jfQ7dgv.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
 
 <br />
 <br />
