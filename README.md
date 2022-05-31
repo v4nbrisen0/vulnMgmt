@@ -60,7 +60,7 @@ I wanted to install a deprecated version of Firefox on my VM to see how that wou
 <img src="https://imgur.com/L6kGbKO.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-9:  <br/>
+There are a lot more vulnerabilities on the VM after installing an old version of Firefox:  <br/>
 <img src="https://imgur.com/Mf0coP4.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 
 <br />
