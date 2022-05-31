@@ -28,7 +28,7 @@ Open the VM and get the IP address. Turn off the Firewall so that you can try to
  <img src="https://imgur.com/Q18kB2K.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-Launch the scan and review the non-credential scan results when complete:  <br/>
+Review the non-credential scan results when complete:  <br/>
 <img src="https://imgur.com/vLjNTSj.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <img src="https://imgur.com/GjK0nVY.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>  
