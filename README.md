@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Demonstrate the difference between a credential and non-credential scan. Install deprecated software to view how a credentialed scan changes before and after deprecated software. Remediate vulnerabilities and another scan to view how many vulnerabilities are left. <br /> <br /> I wanted to operate within the vulnerability scanning and remediation parts of the vulnerability management lifecycle. In this lab, I setup a Windows 10 VM with VMware Workstation to scan with Nessus Essentials. I ran a basic non-credential network scan on the Windows 10 VM to view the types of vulnerabilities that Nessus would find.
+I wanted to operate within the vulnerability scanning and remediation parts of the vulnerability management lifecycle. In this lab, I setup a Windows 10 VM with VMware Workstation to scan with Nessus Essentials. I ran a basic non-credential network scan on the Windows 10 VM to view the types of vulnerabilities that Nessus would find. Next, I ran a credentialed scan on the same Windows 10 VM. The only changes that I made to the VM were the settings that Tenable recommended in order to run a successul credential scan. I added my VM's username and password to the network scan settings and launched the scan again. In order to test how many vulnerabilities Nessus Essentials could find, I also installed a deprecated version of Firefox on my VM and launched the scan. I wanted to start the remediation process now that I have plenty of vulnerabilities to fix. I uninstalled Firefox and updated Windows 10 to clear out all of the critical vulnerabilities. I prioritized the critical vulnerabilities because it was easy to remediate all of them with low effort and impact to the VM.
 <br />
 
 
@@ -26,7 +26,7 @@ Open the VM and get the IP address. Turn off the Firewall so that you can try to
  <img src="https://imgur.com/Q18kB2K.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-Review the non-credential scan results when complete:  <br/>
+Review the non-credential scan results when complete. At this point, I only have medium-rated vulnerabilities and lower:  <br/>
 <img src="https://imgur.com/vLjNTSj.png" height="50%" width="50%" alt="Vulnerability Management Lab"/>
 <br />
 <img src="https://imgur.com/GjK0nVY.png" height="70%" width="70%" alt="Vulnerability Management Lab"/>  
@@ -48,11 +48,13 @@ Edit the basic scan to run with Nessus/Tenable recommendations:
 
 <br />
 <br />
-Look at the results of the credentialed scan. THere are more vulnerabilities listed now compared to when we ran a basic scan in the beginning of the lab:  <br/>
+Look at the results of the credentialed scan. There are more vulnerabilities listed now compared to when we ran a basic scan in the beginning of the lab. Nessus was able to find critical-rated vulnerabilities on the same VM now that it has credentials and more access:  <br/>
 <img src="https://imgur.com/2Q2cDPw.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
+Nessus shows that the recommendation for remediating vulnerabilities is an update to Windows 10. In the VPR Top Threats tab, we see that the top threats are related to an outdated version of Windows 10.
 <img src="https://imgur.com/RaxtoPF.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
+Below is an overview of the vulnerabilities on this VM:
 <img src="https://imgur.com/BSpnFPc.png" height="80%" width="80%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
@@ -60,9 +62,11 @@ I wanted to install a deprecated version of Firefox on my VM to see how that wou
 <img src="https://imgur.com/L6kGbKO.png" height="45%" width="45%" alt="Vulnerability Management Lab"/>
 <br />
 <br />
-There are a lot more vulnerabilities on the VM after installing an old version of Firefox. If you look in the History tab, you can see that the amount of critical vulnerabilities has increased in the pie chart towards the right-side of the screen:  <br/>
+There are a lot more vulnerabilities on the VM after installing an old version of Firefox. If you look in the History tab, you can see that the amount of critical vulnerabilities has increased in the pie chart towards the right-side of the screen. I went from  having 4 critical vulnerabilities to having 72 critical:  <br/>
 <img src="https://imgur.com/ZNJBgO8.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
+As I scroll through the list of critical vulnerabilities, I can see that most of these are related to the deprecated version of Firefox:
 <img src="https://imgur.com/jfQ7dgv.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
+In the VPR Top Threats tab, I notice that Mozilla Firefox has now been added as a top threat:
 <img src="https://imgur.com/DVXEaR3.png" height="80%" width="80%" alt="Vulnerability Management Lab"/><br/>
 
 
